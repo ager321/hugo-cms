@@ -1,6 +1,6 @@
 ---
 title: How mystery flavors confuse our taste buds
-date: 2017-01-04T15:04:10.000Z
+date: 2020-10-27T20:36:48.532Z
 description: People have tried to guess what’s behind the White Mystery Airhead
   for ages, but no one’s gotten it right so far.
 image: /img/blog-chemex.jpg
