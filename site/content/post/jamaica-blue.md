@@ -1,6 +1,6 @@
 ---
 title: NASA's SOFIA discovers water on sunlit surface of Moon
-date: 2020-10-27T12:32:37.899Z
+date: 2020-10-20T11:32:37.899Z
 description: NASA's Stratospheric Observatory for Infrared Astronomy (SOFIA) has
   confirmed, for the first time, water on the sunlit surface of the Moon. This
   discovery indicates that water may be distributed across the lunar surface,
