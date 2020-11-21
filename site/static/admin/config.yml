@@ -15,6 +15,28 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "article_health"
+      label: "Zdrowie"
+      folder: "site/content/article_health"
+      create: true
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Publish Date", name: "date", widget: "datetime"}
+        - {label: "Intro Blurb", name: "description", widget: "text"}
+        - {label: "Image", name: "image", widget: "image", required: false}
+        - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "article_health"
+      label: "Technologie"
+      folder: "site/content/article_tech"
+      create: true
+      fields:
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Publish Date", name: "date", widget: "datetime"}
+        - {label: "Intro Blurb", name: "description", widget: "text"}
+        - {label: "Image", name: "image", widget: "image", required: false}
+        - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "article_environment"
     label: "Środowisko"
     folder: "site/content/article_environment"
@@ -25,11 +47,22 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "article_culture"
+    label: "Kultura"
+    folder: "site/content/article_environment"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Intro Blurb", name: "description", widget: "text" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "pages"
-    label: "Pages"
+    label: "Strony"
     files:
       - file: "site/content/_index.md"
-        label: "Home Page"
+        label: "Strona Domowa"
         name: "home"
         fields:
           - {label: Title, name: title, widget: string}
@@ -42,7 +75,7 @@ collections: # A list of collections the CMS should be able to edit
               {label: "Heading", name: "heading", widget: string},
               {label: "Text", name: "text", widget: "text"}]}
       - file: "site/content/contact/_index.md"
-        label: "Contact Page"
+        label: "Strona kontaktowa"
         name: "contact"
         fields:
           - {label: Title, name: title, widget: string}
