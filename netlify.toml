@@ -10,7 +10,7 @@
 [context.deploy-preview]
   command = "yarn build:preview"
 
-[redirects]
+[[redirects]]
 from = "/post/"
 to = "/contact/"
 status = 200
