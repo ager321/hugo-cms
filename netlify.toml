@@ -10,7 +10,6 @@
 [context.deploy-preview]
   command = "yarn build:preview"
 
-
 [[redirects]]
 from = "/post/*"
 to = "/post/:splat"
