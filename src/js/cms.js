@@ -16,7 +16,7 @@ CMS.registerPreviewStyle(styles, { raw: true });
 CMS.registerPreviewTemplate("home", HomePreview);
 CMS.registerPreviewTemplate("post", PostPreview);
 CMS.registerPreviewTemplate("article_culture", ArticleCulture);
-CMS.registerPreviewTemplate("article_environment", ArticleEnvironment);
+CMS.registerPreviewTemplate("environment", ArticleEnvironment);
 CMS.registerPreviewTemplate("article_technology", ArticleTechnology);
 CMS.registerPreviewTemplate("article_health", ArticleHealth);
 CMS.registerPreviewTemplate("contact", ContactPreview);

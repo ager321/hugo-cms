@@ -35,7 +35,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "article_environment"
+  - name: "environment"
     label: "Environment article"
     folder: "site/content/environment"
     create: true
