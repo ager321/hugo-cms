@@ -16,7 +16,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "article_health"
-    label: "Health"
+    label: "Health article"
     folder: "site/content/health"
     create: true
     fields:
@@ -26,7 +26,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "article_technology"
-    label: "Technology"
+    label: "Technology article"
     folder: "site/content/technology"
     create: true
     fields:
@@ -36,7 +36,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "article_environment"
-    label: "Environment"
+    label: "Environment article"
     folder: "site/content/environment"
     create: true
     fields:
@@ -46,7 +46,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "article_culture"
-    label: "Culture"
+    label: "Culture article"
     folder: "site/content/culture"
     create: true
     fields:
