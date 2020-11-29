@@ -1,6 +1,6 @@
 ---
 title: Climate change causes landfalling hurricanes to stay stronger for longer
-date: 2020-11-29T16:19:39.002Z
+date: 2020-11-29T16:21:56.805Z
 description: Climate change is causing hurricanes that make landfall to take
   more time to weaken, reports a new study. Researchers showed that hurricanes
   that develop over warmer oceans carry more moisture and therefore stay
