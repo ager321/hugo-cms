@@ -1,0 +1,24 @@
+---
+title: "From the inside out: How the brain forms sensory memories"
+date: 2020-11-29T16:12:42.568Z
+description: A new study identifies a region of the thalamus as a key source of
+  signals encoding past experiences in the neocortex.
+image: img/neurons.jpg
+---
+<!--StartFragment-->
+
+The brain encodes information collected by our senses. However, to perceive our environment and to constructively interact with it, these sensory signals need to be interpreted in the context of our previous experiences and current aims. In the latest issue of *Science*, a team of scientists led by Dr. Johannes Letzkus, Research Group Leader at the Max Planck Institute for Brain Research, has identified a key source of this experience-dependent top-down information.
+
+The neocortex is the largest area of the human brain. It has expanded and differentiated enormously during mammalian evolution, and is thought to mediate many of the capacities that distinguish humans from their closest relatives. Moreover, dysfunctions of this area also play a central role in many psychiatric disorders. All higher cognitive functions of the neocortex are enabled by bringing together two distinct streams of information: a 'bottom-up' stream carrying signals from the surrounding environment, and a 'top-down' stream that transmits internally-generated information encoding our previous experiences and current aims.
+
+"Decades of investigation have elucidated how sensory inputs from the environment are processed. However, our knowledge of internally-generated information is still in its infancy. This is one of the biggest gaps in our understanding of higher brain functions like sensory perception," says Letzkus. This motivated the team to search for the sources of these top-down signals. "Previous work by us and many other scientists had suggested that the top-most layer of neocortex is likely a key site that receives inputs carrying top-down information. Taking this as a starting point allowed us to identify a region of the thalamus -- a brain area embedded deep within the forebrain -- as a key candidate source of such internal information."
+
+Motivated by these observations Dr. M. Belén Pardi, the first author of the study and postdoctoral researcher in the Letzkus lab, devised an innovative approach that enabled her to measure the responses of single thalamic synapses in mouse neocortex before and after a learning paradigm. "The results were very clear," Pardi remembers. "Whereas neutral stimuli without relevance were encoded by small and transient responses in this pathway, learning strongly boosted their activity and made the signals both faster and more sustained over time." This suggests that the thalamic synapses in neocortex encode the previous experience of the animal. "We were really convinced that this is the case when we compared the strength of the acquired memory with the change in thalamic activity: This revealed a strong positive correlation, indicating that inputs from the thalamus prominently encode the learned behavioral relevance of stimuli," says Letzkus.
+
+But is this mechanism selective for these top-down memory-related signals? Sensory stimuli can be relevant because of what we have learned to associate with them, but also merely due to their physical properties. For instance, the louder sounds are the more readily they recruit attention in both humans and animals. However, this is a low-level function that has little to do with previous experience. "Intriguingly, we found very different, indeed opposite, encoding mechanisms for this bottom-up form of relevance" says Pardi.
+
+Given their central importance, the scientists speculated that the way these signals are received in the neocortex must be tightly regulated. Pardi and co-workers addressed this in further experiments, combined with computational modeling in collaboration with the laboratory of Dr. Henning Sprekeler and his team at Technische Universität Berlin. The results indeed identified a previously unknown mechanism that can finely tune the information along this pathway, identifying a specialized type of neuron in the top-most layer of neocortex as a dynamic gatekeeper of these top-down signals.
+
+"These results reveal the thalamic inputs to sensory neocortex as a key source of information about the past experiences that have been associated with sensory stimuli. Such top-down signals are perturbed in a number of brain disorders like autism and schizophrenia, and our hope is that the present findings will also enable a deeper understanding of the maladaptive changes that underlie these severe conditions," concludes Letzkus.
+
+<!--EndFragment-->
