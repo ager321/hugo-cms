@@ -89,4 +89,3 @@ collections:
               - label: Text
                 name: text
                 widget: text
-  - name: "Quizzes"
