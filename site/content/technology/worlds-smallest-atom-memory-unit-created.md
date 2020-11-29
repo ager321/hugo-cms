@@ -5,7 +5,7 @@ description: Faster, smaller, smarter and more energy-efficient chips for
   everything from consumer electronics to big data to brain-inspired computing
   could soon be on the way after engineers created the smallest memory device
   yet.
-image: img/5e7b843b67c070dc27ddab8c265ac173306084e81430052582-pimgpsh_thumbnail_win_distr.jpg
+image: ""
 ---
 <!--StartFragment-->
 
