@@ -8,6 +8,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: {
     main: path.join(__dirname, "src", "index.js"),
+    quiz: path.join(__dirname, "src/js", "quiz.js"),
     cms: path.join(__dirname, "src", "js", "cms.js"),
   },
 
