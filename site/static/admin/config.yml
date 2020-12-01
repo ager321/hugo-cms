@@ -63,11 +63,11 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Question1", name: "Question1", widget: "text" }
-      - { label: "Image1", name: "image", widget: "image", required: false }
-      - { label: "Question2", name: "Question1", widget: "text" }
-      - { label: "Image2", name: "image", widget: "image", required: false }
-      - { label: "Question3", name: "Question1", widget: "text" }
-      - { label: "Image3", name: "image", widget: "image", required: false }
+      - { label: "Image1", name: "image1", widget: "image", required: false }
+      - { label: "Question2", name: "Question2", widget: "text" }
+      - { label: "Image2", name: "image2", widget: "image", required: false }
+      - { label: "Question3", name: "Question3", widget: "text" }
+      - { label: "Image3", name: "image3", widget: "image", required: false }
 
 
   - name: "pages"
