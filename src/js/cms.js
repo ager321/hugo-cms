@@ -9,12 +9,10 @@ import ArticleCulture from "./cms-preview-templates/article_culture";
 import ArticleEnvironment from "./cms-preview-templates/article_environment";
 import ArticleTechnology from "./cms-preview-templates/article_technology";
 import ArticleHealth from "./cms-preview-templates/article_health";
-import PostPreview from "./cms-preview-templates/post";
 import ContactPreview from "./cms-preview-templates/contact";
 
 CMS.registerPreviewStyle(styles, { raw: true });
 CMS.registerPreviewTemplate("home", HomePreview);
-CMS.registerPreviewTemplate("post", PostPreview);
 CMS.registerPreviewTemplate("article_culture", ArticleCulture);
 CMS.registerPreviewTemplate("environment", ArticleEnvironment);
 CMS.registerPreviewTemplate("article_technology", ArticleTechnology);
