@@ -11,7 +11,7 @@
   command = "yarn build:preview"
 
 [[redirects]]
-from = "/post/*"
+from = "/health/*"
 to = "/post/:splat"
 status = 200
 force = true
