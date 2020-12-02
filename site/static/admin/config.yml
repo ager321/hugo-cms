@@ -62,13 +62,17 @@ collections:
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Intro, name: intro, widget: markdown }
-      - label: Team
-        name: team
+      - label: Question
+        name: questions
         widget: list
         fields:
-          - { label: Name, name: name, widget: string }
-          - { label: Position, name: position, widget: string }
-          - { label: Photo, name: photo, widget: image }
+          - { label: Question, name: question, widget: string }
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Answer 1", name: "answer1", widget: "string" }
+          - { label: "Answer 2", name: "answer2", widget: "string" }
+          - { label: "Answer 3", name: "answer3", widget: "string" }
+          - { label: "Answer 4", name: "answer4", widget: "string" }
+          - { label: "Correct answer", name: "correct", widget: "number", default: 2, value_type: "int", min: 1, max: 4}
 
   - name: "pages"
     label: "Pages"
