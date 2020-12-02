@@ -10,6 +10,8 @@
             <p>{{ .Description }}</p>
             {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
             {{ .Content }}
+            <h5>Share this article:</h5>
+            <div class="sharethis-inline-share-buttons"></div>
         </div>
     </div>
 {{ end }}
