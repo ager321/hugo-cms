@@ -1,6 +1,7 @@
 ---
 title: Quiz o dziwnactwach
 intro: Śmieszny quiz
+date: 2020-11-29T16:21:56.805Z
 questions:
   - correct: 1
     answer4: Chomik

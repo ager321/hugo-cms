@@ -1,19 +1,48 @@
-
-
 {{ define "main" }}
 
-    <div class="mw6 center ph3 pv4 quiz">
-dsfsdfds
-asdasd
+    <div class="mw6 center ph3 pv4">
+        <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
+        <div class="flex justify-between grey-3">
+            <p>{{ .Date.Format "Monday, Jan 2, 2006" }}</p>
+
+        </div>
+        <div class="cms mw6">
+            <p>{{ .Params.intro }}</p>
+            {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}"/>{{ end }}
+            <div id="questions">
+                {{range $elem_index,  $elem_val := .Params.questions }}
+                    <div id="question{{$elem_index}}" correct-answer="{{ .correct}}">
+
+                        <div>{{ .question }}</div>
+                        <div>{{ if .image }}<img src="{{ .image }}" alt="{{ .Title }}"/>{{ end }}</div>
+
+                        <form id="answers{{$elem_index}}">
+                            <input type="radio" name="answer{{$elem_index}}" id="answer{{$elem_index}}_1" value="1">{{ .answer1 }}
+                            <input type="radio" name="answer{{$elem_index}}" id="answer{{$elem_index}}_2" value="2">{{ .answer2 }}
+                            <input type="radio" name="answer{{$elem_index}}" id="answer{{$elem_index}}_3" value="3">{{ .answer3 }}
+                            <input type="radio" name="answer{{$elem_index}}" id="answer{{$elem_index}}_4" value="4">{{ .answer4 }}
+                        </form>
+
+                    </div>
+                {{ end }}
+            </div>
+            <button id="check_answer">Check answers!</button>
+
+
+
+            <div >
+                You scored <div id="">
+            </div>
+
+        </div>
     </div>
 
-
+    {{.URL}}
+        <div class="sharethis-inline-share-buttons"></div>
 
     {{ $script := .Site.Data.webpack.quiz }}
     {{ with $script.js }}
         <script src="{{ relURL . }}"></script>
-        <script></script>
-
     {{ end }}
 
 
