@@ -2,7 +2,7 @@
 title: Quiz o dziwnactwach
 intro: Śmieszny quiz
 questions:
-  - correct: 2
+  - correct: 1
     answer4: Chomik
     question: Co to za żaba?
     image: img/hurricane.jpg
