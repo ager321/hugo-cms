@@ -16,4 +16,11 @@ questions:
     answer2: Tak
     answer3: Może
     answer4: Prawie
+  - correct: 3
+    question: Co to za przyrząd
+    image: img/technology-jumbotron.jpg
+    answer1: Łyżka
+    answer2: koń
+    answer3: teleskop
+    answer4: to nie przyrząd
 ---
