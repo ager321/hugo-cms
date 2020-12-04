@@ -1,3 +1,35 @@
-.quiz {
-    background-color: #B31E00;
+
+.radio-toolbar {
+    margin: 10px;
+}
+
+.radio-toolbar input[type="radio"] {
+    width: 0;
+    opacity: 0;
+    position: fixed;
+}
+
+.radio-toolbar label {
+    display: inline-block;
+    margin-bottom: 2px;
+    background-color: var(--grey-2);
+    padding: 10px 20px;
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    width: 92%;
+}
+
+.radio-toolbar label:hover {
+    background-color: #dfd;
+}
+
+
+.radio-toolbar input[type="radio"]:checked + label {
+    background-color: #bfb;
+    border-color: #4c4;
+}
+
+
+.wf{
+
 }

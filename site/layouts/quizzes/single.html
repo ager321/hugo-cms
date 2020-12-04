@@ -1,42 +1,59 @@
 {{ define "main" }}
 
+
+
     <div class="mw6 center ph3 pv4">
         <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
-        <div class="flex justify-between grey-3">
-            <p>{{ .Date.Format "Monday, Jan 2, 2006" }}</p>
 
+
+
+        <p>{{ .Params.intro }}</p>
+        {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}"/>{{ end }}
+        <div id="questions">
+
+
+            {{range $elem_index,  $elem_val := .Params.questions }}
+                <div id="question{{$elem_index}}" correct-answer="{{ .correct}}" class="pv3 db .mv3-l">
+                    <h1 class="f4 lh-title b mb4">{{ .question }}</h1>
+                    <div>{{ if .image }}<img src="{{ .image }}" alt="{{ .Title }}"/>{{ end }}</div>
+                    <form id="answers{{$elem_index}}" class="">
+
+                        <div class="radio-toolbar">
+
+                                <input type="radio" id="answer{{$elem_index}}_1" name="answer{{$elem_index}}" value="1"  >
+                                <label for="answer{{$elem_index}}_1" >{{ .answer1 }}</label>
+
+                                <input type="radio" id="answer{{$elem_index}}_2" name="answer{{$elem_index}}" value="2"  >
+                                <label for="answer{{$elem_index}}_2" >{{ .answer2 }}</label>
+
+                                <input type="radio" id="answer{{$elem_index}}_3" name="answer{{$elem_index}}" value="3"  >
+                                <label for="answer{{$elem_index}}_3" >{{ .answer3 }}</label>
+
+                                <input type="radio" id="answer{{$elem_index}}_4" name="answer{{$elem_index}}" value="4"  >
+                                <label for="answer{{$elem_index}}_4" >{{ .answer4 }}</label>
+
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+            {{ end }}
+
+            <button id="check_answer" class="btn w-100 w-auto-ns raise">Check answers!</button>
         </div>
-        <div class="cms mw6">
-            <p>{{ .Params.intro }}</p>
-            {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}"/>{{ end }}
-            <div id="questions">
-                {{range $elem_index,  $elem_val := .Params.questions }}
-                    <div id="question{{$elem_index}}" correct-answer="{{ .correct}}">
-
-                        <div>{{ .question }}</div>
-                        <div>{{ if .image }}<img src="{{ .image }}" alt="{{ .Title }}"/>{{ end }}</div>
-
-                        <form id="answers{{$elem_index}}">
-                            <input type="radio" name="answer{{$elem_index}}" id="answer{{$elem_index}}_1" value="1">{{ .answer1 }}
-                            <input type="radio" name="answer{{$elem_index}}" id="answer{{$elem_index}}_2" value="2">{{ .answer2 }}
-                            <input type="radio" name="answer{{$elem_index}}" id="answer{{$elem_index}}_3" value="3">{{ .answer3 }}
-                            <input type="radio" name="answer{{$elem_index}}" id="answer{{$elem_index}}_4" value="4">{{ .answer4 }}
-                        </form>
-
-                    </div>
-                {{ end }}
-            </div>
-            <button id="check_answer">Check answers!</button>
 
 
 
-            <div >
-                You scored <div id=""></div>
-            </div>
-            <div class="sharethis-inline-share-buttons"></div>
-
+        <div>
+            You scored
+            <div id=""></div>
         </div>
+        <div class="sharethis-inline-share-buttons"></div>
+
     </div>
+
 
 
     {{ $script := .Site.Data.webpack.quiz }}
