@@ -16,9 +16,7 @@
                 <div id="question{{$elem_index}}" correct-answer="{{ .correct}}" class="pv3 db .mv3-l">
                     <h1 class="f4 lh-title b mb4">{{ .question }}</h1>
                     <div>{{ if .image }}<img src="{{ .image }}" alt="{{ .Title }}"/>{{ end }}</div>
-                    <form id="answers{{$elem_index}}" class="">
-
-                        <div class="radio-toolbar">
+                    <form id="answers{{$elem_index}}" class="radio-toolbar">
 
                                 <input type="radio" id="answer{{$elem_index}}_1" name="answer{{$elem_index}}" value="1"  >
                                 <label for="answer{{$elem_index}}_1" >{{ .answer1 }}</label>
@@ -31,24 +29,17 @@
 
                                 <input type="radio" id="answer{{$elem_index}}_4" name="answer{{$elem_index}}" value="4"  >
                                 <label for="answer{{$elem_index}}_4" >{{ .answer4 }}</label>
-
-
-                        </div>
-
-
                     </form>
 
                 </div>
             {{ end }}
 
-            <button id="check_answer" class="btn w-100 w-auto-ns raise">Check answers!</button>
         </div>
+        <button id="check_answer" class="btn w-100 w-auto-ns raise">Check answers!</button>
 
-
-
-        <div>
-            You scored
-            <div id=""></div>
+        <div id="result_container">
+            <div id="score" class="mv3 b f2"></div>
+            <div class="f4 mv1">Great job! Share the result on:</div>
         </div>
         <div class="sharethis-inline-share-buttons"></div>
 
