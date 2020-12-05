@@ -27,6 +27,18 @@ window.netlifyIdentity.on("init", (user) => {
             }
 
         });
+        window.netlifyIdentity.on("close", (user) => {
+            console.log("1");
+            if (user.app_metadata.roles.includes("editor"))
+            {console.log("2");
+                document.location.href = "/admin/";
+            }
+            else
+            {console.log("3");
+                document.location.href = "/404/";
+            }
+
+        });
 
     }
     else
