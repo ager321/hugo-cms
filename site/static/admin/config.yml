@@ -5,16 +5,6 @@ media_folder: "site/static/img"
 public_folder: "img"
 
 collections:
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "site/content/post" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Intro Blurb", name: "description", widget: "text"}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
   - name: "article_health"
     label: "Health article"
     folder: "site/content/health"
@@ -61,7 +51,7 @@ collections:
     create: true
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Intro, name: intro, widget: markdown }
+      - {label: "Intro Blurb", name: "description", widget: "text"}
       - { label: "Image", name: "image", widget: "image", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - label: Question
