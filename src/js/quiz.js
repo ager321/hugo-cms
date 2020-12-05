@@ -1,7 +1,7 @@
 document.getElementById("check_answer").addEventListener("click", checkAnswers)
-
 function checkAnswers()
 {
+    console.log(netlifyIdentity.currentUser().app_metadata.roles);
     let questions = document.getElementById("questions").children;
     let numberOfCorrect = 0;
     let numberOfQuestions = questions.length;
@@ -46,6 +46,13 @@ function checkQuestion(questionReference)
 }
 
 
-console.log(netlifyIdentity.currentUser().app_metadata.roles.includes("editor"));
-console.log(netlifyIdentity.currentUser().app_metadata.roles);
-console.log(window.location.href);
+window.netlifyIdentity.on('init', user => redirect(user));
+
+
+function redirect(user)
+{
+    if (!user)
+    {
+        window.location.replace("/gated/")
+    }
+}
