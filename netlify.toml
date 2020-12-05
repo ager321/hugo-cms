@@ -11,11 +11,12 @@
   command = "yarn build:preview"
 
 [[redirects]]
-from = "/health/*"
-to = "/health/:splat"
+from = "/health/"
+to = "/health/"
 status = 200
 force = true
 conditions = {Role = ["user"]}
+
 
 [[redirects]]
 from = "/health/*"
