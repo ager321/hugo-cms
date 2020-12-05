@@ -10,16 +10,16 @@
 [context.deploy-preview]
   command = "yarn build:preview"
 
-[[redirects]]
-from = "/health/"
-to = "/health/"
-status = 200
-force = true
-conditions = {Role = ["user"]}
+#[[redirects]]
+#from = "/admin/*"
+#to = "/admin/:splat"
+#status = 200
+#force = true
+#conditions = {Role = ["editor"]}
 
-
-[[redirects]]
-from = "/health/*"
-to = "/gated/"
-status = 404
-force = true
+#
+#[[redirects]]
+#from = "/admin/*"
+#to = "/gated/"
+#status = 404
+#force = true
