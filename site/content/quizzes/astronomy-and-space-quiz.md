@@ -1,13 +1,8 @@
 ---
 title: Astronomy and Space Quiz
-intro: >-
-  <!--StartFragment-->
-
-
-  What makes a planet a dwarf planet? How many miles are in a light-year? What exactly is a quasar? Launch into other worlds while testing your knowledge about space, celestial bodies, and the solar system.
-
-
-  <!--EndFragment-->
+intro: What makes a planet a dwarf planet? How many miles are in a light-year?
+  What exactly is a quasar? Launch into other worlds while testing your
+  knowledge about space, celestial bodies, and the solar system.
 image: img/astronomy_quiz.jpg
 date: 2020-12-05T17:49:08.199Z
 questions:
