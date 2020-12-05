@@ -3,7 +3,7 @@
   NPM_VERSION = "6.4.1"
 
 [build]
-  command = "yarn build"
+  command = "yarn yare"
   publish = "dist"
   functions = "functions"
 
