@@ -11,7 +11,14 @@
   command = "yarn build:preview"
 
 [[redirects]]
- from = "/*"
- to = "/"
- status = 200
- force = true
+from = "/health/*"
+to = "/health/:splat"
+status = 200
+force = true
+conditions = {Role = ["user"]}
+
+[[redirects]]
+from = "/health/*"
+to = "/gated/"
+status = 404
+force = true
