@@ -11,6 +11,34 @@ import ArticleHealth from "./cms-preview-templates/article_health";
 import ContactPreview from "./cms-preview-templates/contact";
 import Quiz from "./cms-preview-templates/contact";
 
+window.netlifyIdentity.on("init", (user) => {
+    console.log("0");
+    console.log(user);
+    if (!user) {
+        window.netlifyIdentity.on("login", (user) => {
+            console.log("1");
+            if (user.app_metadata.roles.includes("editor"))
+            {console.log("2");
+                document.location.href = "/admin/";
+            }
+            else
+            {console.log("3");
+                document.location.href = "/404/";
+            }
+
+        });
+
+    }
+    else
+    {console.log("4");
+        console.log(user.app_metadata.roles)
+        if (!user.app_metadata.roles.includes("editor"))
+        {console.log("5");
+            document.location.href = "/404/";
+        }
+    }
+});
+
 CMS.registerPreviewStyle(styles, { raw: true });
 CMS.registerPreviewTemplate("home", HomePreview);
 CMS.registerPreviewTemplate("article_culture", ArticleCulture);
