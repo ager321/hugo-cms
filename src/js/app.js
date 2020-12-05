@@ -1,5 +1,6 @@
 if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", (user) => {
+        console.log("0");
         if (!user) {
                 window.netlifyIdentity.on("login", (user) => {
                     console.log("1");
