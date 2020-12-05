@@ -44,3 +44,8 @@ function checkQuestion(questionReference)
     return (index + 1 == answerNumber)
 
 }
+
+
+console.log(netlifyIdentity.currentUser().app_metadata.roles.includes("editor"));
+console.log(netlifyIdentity.currentUser().app_metadata.roles);
+console.log(window.location.href);
