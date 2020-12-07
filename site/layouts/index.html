@@ -5,4 +5,68 @@
 {{ partial "short-text" .Params.blurb}}
 
 
+
+{{ with .Site.GetPage "/technology" }}
+    <div class="mw7 center">
+        <ul class="flex-ns flex-wrap mhn1-ns pa3">
+            {{ range (.Paginator 2).Pages.ByPublishDate.Reverse }}
+                <div class="w-50-ns ph1-ns flex">
+                    {{ .Render "li"}}
+                </div>
+            {{ end }}
+        </ul>
+    </div>
+{{ end }}
+
+{{ partial "text-and-image" .Params.short_env}}
+{{ with .Site.GetPage "/environment" }}
+    <div class="mw7 center">
+        <ul class="flex-ns flex-wrap mhn1-ns pa3">
+            {{ range (.Paginator 2).Pages.ByPublishDate.Reverse }}
+                <div class="w-50-ns ph1-ns flex">
+                    {{ .Render "li"}}
+                </div>
+            {{ end }}
+        </ul>
+    </div>
+{{ end }}
+
+{{ with .Site.GetPage "/culture" }}
+    <div class="mw7 center">
+        <ul class="flex-ns flex-wrap mhn1-ns pa3">
+            {{ range (.Paginator 2).Pages.ByPublishDate.Reverse }}
+                <div class="w-50-ns ph1-ns flex">
+                    {{ .Render "li"}}
+                </div>
+            {{ end }}
+        </ul>
+    </div>
+{{ end }}
+
+{{ with .Site.GetPage "/health" }}
+    <div class="mw7 center">
+        <ul class="flex-ns flex-wrap mhn1-ns pa3">
+            {{ range (.Paginator 2).Pages.ByPublishDate.Reverse }}
+                <div class="w-50-ns ph1-ns flex">
+                    {{ .Render "li"}}
+                </div>
+            {{ end }}
+        </ul>
+    </div>
+{{ end }}
+
+
+{{ with .Site.GetPage "/technology" }}
+    <div class="mw7 center">
+        <ul class="flex-ns flex-wrap mhn1-ns pa3">
+            {{ range (.Paginator 2).Pages.ByPublishDate.Reverse }}
+                <div class="w-50-ns ph1-ns flex">
+                    {{ .Render "li"}}
+                </div>
+            {{ end }}
+        </ul>
+    </div>
+{{ end }}
+
+
 {{ end }}
