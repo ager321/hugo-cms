@@ -48,6 +48,61 @@ export default class PostPreview extends React.Component {
             </div>
         </div>
 
+        <div className="bg-grey-1 pv4">
+            <div className="ph3 mw7 center">
+
+                <div className="flex-l mhn2-l">
+                    <div className="w-40-l ph2-l">
+                        <h2 className="f2 b lh-title mb2">{entry.getIn(["data", "short_env", "title"])}</h2>
+
+                        <p>{entry.getIn(["data", "short_env", "text"])}</p>
+                    </div>
+
+                    <div className="w-60-l ph2-l">
+                        <img src={entry.getIn(["data", "short_env", "title"])} alt="" className="mb3"></img>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div className="bg-grey-1 pv4">
+            <div className="ph3 mw7 center">
+
+                <div className="flex-l mhn2-l">
+                    <div className="w-40-l ph2-l">
+                        <h2 className="f2 b lh-title mb2">{entry.getIn(["data", "short_cul", "title"])}</h2>
+
+                        <p>{entry.getIn(["data", "short_cul", "text"])}</p>
+                    </div>
+
+                    <div className="w-60-l ph2-l">
+                        <img src={entry.getIn(["data", "short_cul", "title"])} alt="" className="mb3"></img>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div className="bg-grey-1 pv4">
+            <div className="ph3 mw7 center">
+
+                <div className="flex-l mhn2-l">
+                    <div className="w-40-l ph2-l">
+                        <h2 className="f2 b lh-title mb2">{entry.getIn(["data", "short_health", "title"])}</h2>
+
+                        <p>{entry.getIn(["data", "short_health", "text"])}</p>
+                    </div>
+
+                    <div className="w-60-l ph2-l">
+                        <img src={entry.getIn(["data", "short_health", "title"])} alt="" className="mb3"></img>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
 
     </div>
 
