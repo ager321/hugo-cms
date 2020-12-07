@@ -41,7 +41,7 @@ export default class PostPreview extends React.Component {
                     </div>
 
                     <div className="w-60-l ph2-l">
-                        <img src='{entry.getIn(["data", "short_tech", "image"])}' alt="" className="mb3">
+                        <img src={entry.getIn(["data", "short_tech", "title"])} alt="" className="mb3"></img>
                     </div>
                 </div>
 
