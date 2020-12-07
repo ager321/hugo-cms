@@ -19,8 +19,8 @@ short_env:
     things we could use.” —Mother Teresa
 short_tech:
   title: Technology Articles
-  text: '"Instrumental or mechanical sciencce is the noblest and, above all
-    others, the most useful." --Leonardo da Vinci'
+  text: '"Instrumental or mechanical science is the noblest and, above all others,
+    the most useful." --Leonardo da Vinci'
   image: img/og-image.jpg
 short_cul:
   title: Culture articles
