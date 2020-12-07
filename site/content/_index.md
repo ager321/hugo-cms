@@ -7,8 +7,8 @@ title: Popular science
 subtitle: " "
 image: img/home-jumbotron.jpg
 blurb:
-  heading: SciPop
-  text: lorem
+  heading: Popsci
+  text: Quizzes and articles!
 intro:
   heading: " "
   text: " "
