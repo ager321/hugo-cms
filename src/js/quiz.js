@@ -14,10 +14,7 @@ function checkAnswers()
 
     }
 
-
-
     showScore(numberOfQuestions, numberOfCorrect);
-
 }
 
 
@@ -45,9 +42,7 @@ function checkQuestion(questionReference)
 
 }
 
-
 window.netlifyIdentity.on('init', user => redirect(user));
-
 
 function redirect(user)
 {
