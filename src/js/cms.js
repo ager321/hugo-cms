@@ -1,5 +1,6 @@
 import React from "react";
 import CMS from "netlify-cms-app";
+
 import styles from "!to-string-loader!css-loader!postcss-loader!sass-loader!../css/main.css";
 
 import HomePreview from "./cms-preview-templates/home";

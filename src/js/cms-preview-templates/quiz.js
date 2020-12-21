@@ -13,7 +13,7 @@ export default class Quiz extends React.Component {
 
             <button id="check_answer" className="btn w-100 w-auto-ns raise">Check answers!</button>
 
-
+            { widgetFor("body") }
         </div>
     }
 }
